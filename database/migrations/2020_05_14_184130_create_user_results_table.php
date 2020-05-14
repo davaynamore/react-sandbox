@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUserResulsTable extends Migration
+class CreateUserResultsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateUserResulsTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_resuls', function (Blueprint $table) {
+        Schema::create('user_results', function (Blueprint $table) {
             $table->id();
             $table->float('mouse_x');
             $table->float('mouse_y');
@@ -33,6 +33,6 @@ class CreateUserResulsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_resuls');
+        Schema::dropIfExists('user_results');
     }
 }

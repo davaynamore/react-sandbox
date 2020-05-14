@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\UserResul;
+use App\Models\UserResult;
 use Illuminate\Http\Request;
 
-class UserResulController extends Controller
+class UserResultController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class UserResulController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\UserResul  $userResul
+     * @param  \App\Models\UserResult  $userResult
      * @return \Illuminate\Http\Response
      */
-    public function show(UserResul $userResul)
+    public function show(UserResult $userResult)
     {
         //
     }
@@ -52,10 +52,10 @@ class UserResulController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\UserResul  $userResul
+     * @param  \App\Models\UserResult  $userResult
      * @return \Illuminate\Http\Response
      */
-    public function edit(UserResul $userResul)
+    public function edit(UserResult $userResult)
     {
         //
     }
@@ -64,10 +64,10 @@ class UserResulController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\UserResul  $userResul
+     * @param  \App\Models\UserResult  $userResult
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, UserResul $userResul)
+    public function update(Request $request, UserResult $userResult)
     {
         //
     }
@@ -75,10 +75,10 @@ class UserResulController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\UserResul  $userResul
+     * @param  \App\Models\UserResult  $userResult
      * @return \Illuminate\Http\Response
      */
-    public function destroy(UserResul $userResul)
+    public function destroy(UserResult $userResult)
     {
         //
     }

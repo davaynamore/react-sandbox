@@ -46,7 +46,7 @@ class User extends Authenticatable
     }
 
     public function results(){
-        return $this->hasMany(UserResul::class);
+        return $this->hasMany(UserResult::class);
     }
 
 

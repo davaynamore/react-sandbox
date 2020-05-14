@@ -2,10 +2,10 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Models\UserResul;
+use App\Models\UserResult;
 use Faker\Generator as Faker;
 
-$factory->define(UserResul::class, function (Faker $faker) {
+$factory->define(UserResult::class, function (Faker $faker) {
     return [
         //
     ];
