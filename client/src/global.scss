@@ -1,0 +1,40 @@
+@import "./static/styles/variables";
+@import "./static/styles/additional";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    font-size: $base-size;
+    font-family: $main-font;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: setColor(text);
+}
+
+a {
+    &:link {
+        color: setColor(text);
+        text-decoration: none;
+    }
+
+    &:active {
+        color: setColor(active-link);
+    }
+}
+
+.background-image {
+    @include square(100px);
+    background: url("#{$images_dir}logo192.png") no-repeat;
+    background-size: contain;
+}
