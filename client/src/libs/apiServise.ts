@@ -15,6 +15,8 @@ class RequestService {
 
     private getDataFromServerResponse: GetServerResponse = ({ data }) => data;
 
+    private getErrorFromServerResponse: GetServerResponse = (error) => error;
+
     /**
      * @method getPhotos - метод для демонстрации, который получает картинки с сервера jsonplaceholder
      */
@@ -22,11 +24,7 @@ class RequestService {
     public getPhotos = (): Promise<void> => this.api
         .get('/photos')
         .then(this.getDataFromServerResponse)
-        .catch((error) => {
-            throw new Error(`Could not fetch data. Error: ${error}`);
-        });
+        .catch(this.getErrorFromServerResponse);
 };
 
-const Api = new RequestService();
-
-export default Api;
+export default new RequestService();

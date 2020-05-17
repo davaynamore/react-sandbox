@@ -6,9 +6,13 @@ import Counter from '../counter';
 
 
 const App = (): JSX.Element => {
-    Api.getPhotos()
+    Api
+        .getPhotos()
         .then((data) => {
             console.log('data', data);
+        })
+        .catch((error) => {
+            console.log('error', error);
         });
 
     return (
