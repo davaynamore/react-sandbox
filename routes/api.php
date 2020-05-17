@@ -20,3 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  Route::get('/', function (){
      return response()->json(['hellow Api'], 200);
  });
+
+ Route::post('/register', 'LoginController@register');

@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/apidoc', function () {
+    return view('apidoc.index');
+})->name('apidoc.json');
