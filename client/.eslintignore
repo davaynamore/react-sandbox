@@ -1,0 +1,6 @@
+*.config.js
+*.d.ts
+tests
+frontdocs
+node_modules
+public

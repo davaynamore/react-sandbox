@@ -5,6 +5,7 @@
  */
 class StorageHelper {
     private storage = localStorage;
+
     /**
      * @method get
      * @param key позволяет получить доступ к соответствующей сущности
