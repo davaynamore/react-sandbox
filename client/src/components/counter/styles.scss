@@ -1,0 +1,25 @@
+@import '../../static/styles/variables';
+@import '../../static/styles/additional';
+
+
+.counter {
+    display: inline-block;
+
+    &__button {
+        margin-right: 1rem;
+        padding: 10px 15px;
+        background-color: setColor(btn);
+        color: setColor(white);
+        border: none;
+        border-radius: 2px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__value {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
